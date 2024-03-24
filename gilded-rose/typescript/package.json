@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "typescript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"private": "true",
+	"scripts": {
+		"test:unit": "TS_NODE_PROJECT='./tsconfig.test.json' nyc mocha src/**/*.spec.ts",
+		"dev": "tsx ./src/golden-master-text-test.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/mocha": "10.0.6",
+		"@types/node": "20.11.30",
+		"chai": "5.1.0",
+		"mocha": "10.3.0",
+		"nyc": "15.1.0",
+		"tsx": "4.7.1",
+		"typescript": "5.4.3"
+	}
+}
