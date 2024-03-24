@@ -476,7 +476,7 @@ export class GildedRose {
       "Aged Brie": "agedBrie",
       "Backstage passes to a TAFKAL80ETC concert": "backstagePasses",
       "Sulfuras, Hand of Ragnaros": "sulfuras",
-      Conjured: "conjured",
+      'Conjured Mana Cake': "conjured",
     } as const;
 
     return map[itemName] || "regular";

@@ -102,16 +102,16 @@ describe("Gilded Rose", () => {
 		expect(backstagePasses.quality).to.equal(50);
 	});
 
-	it("should decrease the quality twice as fast as regular items when sellIn is positive", () => {
-		const gildedRose = new GildedRose([new Item("Conjured", 20, 10)]);
+	it("should decrease the Conjured Mana Cake quality twice as fast as regular items when sellIn is positive", () => {
+		const gildedRose = new GildedRose([new Item("Conjured Mana Cake", 20, 10)]);
 
 		const conjuredItem = gildedRose.updateQuality()[0];
 
 		expect(conjuredItem.quality).to.equal(8);
 	});
 
-	it("should decrease the quality twice as fast as regular items when sellIn is negative", () => {
-		const gildedRose = new GildedRose([new Item("Conjured", -1, 10)]);
+	it("should decrease the Conjured Mana Cake quality twice as fast as regular items when sellIn is negative", () => {
+		const gildedRose = new GildedRose([new Item("Conjured Mana Cake", -1, 10)]);
 
 		const conjuredItem = gildedRose.updateQuality()[0];
 
